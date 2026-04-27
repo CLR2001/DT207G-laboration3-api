@@ -21,7 +21,7 @@ app.use(cors({
 app.use(express.json());
 
 /* --------------------------------- Routes --------------------------------- */
-app.use('/employments', employmentsRoutes);
+app.use('/employments2', employmentsRoutes);
 
 /* ------------------------------- Connection ------------------------------- */
 mongoose.connect(mongoURI)
@@ -35,8 +35,8 @@ mongoose.connect(mongoURI)
       setTimeout(() => {
         console.log("\n-------------------------------------------");
         console.log(`  ● Server is running on port ${port}!`);
-        if (isDev) console.log(`  › ${pc.blue(pc.underline(`http://localhost:${port}/employments`))}`)
-        else console.log(`  › ${pc.blue(pc.underline('https://api.clr-server.com/employments'))}`);
+        if (isDev) console.log(`  › ${pc.blue(pc.underline(`http://localhost:${port}/employments2`))}`)
+        else console.log(`  › ${pc.blue(pc.underline('https://api.clr-server.com/employments2'))}`);
         console.log("-------------------------------------------");
       }, 500);
     });
