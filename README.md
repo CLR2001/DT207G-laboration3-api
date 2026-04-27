@@ -4,7 +4,7 @@ Detta repository innehåller ett API för laboration 3 i kursen DT207G.
 API:et hanterar olika jobberfarenheter för att skapa ett digitalt CV. CRUD (Create, Read, Update, Delete) funktionalitet är implementerat.
 
 ## ⬀ Länk till API
-API:et finns tillgängligt på följande URL: [https://api.clr-server.com/employments2](https://api.clr-server.com/employments2)
+API:et finns tillgängligt på följande URL: [https://lab3.api.clr-server.com/employments](https://lab3.api.clr-server.com/employments)
 
 ## ✦ Databas och Scheman
 Detta API använder NoSQL-databassystemet MongoDB.
@@ -22,11 +22,11 @@ Detta API använder NoSQL-databassystemet MongoDB.
 ## ⚙ Användning
 | Metod | Ändpunkt | Beskrivning |
 | :--- | :--- | :--- |
-| GET | `/employments2` | Hämtar alla jobberfarenheter. |
-| GET | `/employments2/:ID` | Hämtar en specifik jobberfarenhet med angivet ID. |
-| POST | `/employments2` | Lagrar en ny jobberfarenhet i databasen. Ett objekt med jobb-data måste skicaks med i anropet. |
-| PUT | `/employments2/:ID` | Uppdaterar en existerande jobberfarenhet i databasen. Ett objekt med jobb-data måste skicaks med i anropet. |
-| DELETE | `/employments2/:ID` | Raderar en jobberfarenhet med angivet ID. |
+| GET | `/employments` | Hämtar alla jobberfarenheter. |
+| GET | `/employments/:ID` | Hämtar en specifik jobberfarenhet med angivet ID. |
+| POST | `/employments` | Lagrar en ny jobberfarenhet i databasen. Ett objekt med jobb-data måste skicaks med i anropet. |
+| PUT | `/employments/:ID` | Uppdaterar en existerande jobberfarenhet i databasen. Ett objekt med jobb-data måste skicaks med i anropet. |
+| DELETE | `/employments/:ID` | Raderar en jobberfarenhet med angivet ID. |
 
 Följande jobberfarenhets-objekt returneras vid lyckat get-anrop i JSON-format.
 ```bash
